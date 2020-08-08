@@ -43,7 +43,7 @@ public class Rectangle extends Shape {
     }
 
     public String toString() {
-        String s = "[width=" + width + ", length=" + length + "]";
+        String s = "Rectangle[width=" + width + ", length=" + length + ", color=" + color + ", filled=" + filled + "]";
         return s; 
     }
 }

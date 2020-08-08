@@ -1,4 +1,4 @@
-public class Square extends Rectangle{
+public class Square extends Rectangle {
     public Square() {
     }
 
@@ -7,16 +7,18 @@ public class Square extends Rectangle{
     }
 
     public Square(double side, String color, boolean filled) {
-        super(color, filled);
-        this.side = side;
+        this.width = side;
+        this.length = side;
+        this.color = color;
+        this.filled = filled;
     }
 
     public double getSize() {
-        return side;
+        return width;
     }
 
-    public void setSide() {
-        this.side = side;
+    public void setSide(double side) {
+        this.width = side;
     }
 
     public void setWidth(double side) {
@@ -28,6 +30,7 @@ public class Square extends Rectangle{
     }
 
     public String toString() {
-        return super.toString();
+        String s = "Square[side=" + width + ", color=" + color + ", filled=" + filled + "]";
+        return s;
     }
 }

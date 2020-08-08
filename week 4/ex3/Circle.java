@@ -1,6 +1,6 @@
 public class Circle extends Shape {
     final protected double PI = 3.14;
-    private double radius;
+    protected double radius;
 
     public Circle() {
     }
@@ -33,7 +33,7 @@ public class Circle extends Shape {
     }
 
     public String toString() {
-        String s = "Circle[" + "radius=" + radius + ",color=" + color + "]";
+        String s = "Circle[" + "radius=" + radius + ",color=" + color + ", filled=" + filled + "]";
         return s;
     }
 }
